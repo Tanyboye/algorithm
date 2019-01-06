@@ -1,4 +1,4 @@
-package tanyboye.offer.array.duplicate;
+package tanyboye.offer._03_02_DuplicationInArrayNoEdit;
 
 /**
  * @author: chengbg
@@ -7,7 +7,7 @@ package tanyboye.offer.array.duplicate;
  * 请找出数组中任意一个重复的数字，但不能修改输入的数组。
  * 例如，如果输入长度为8的数组{2, 3, 5, 4, 3, 2, 6, 7}，那么对应的输出是重复的数字2或者3。
  **/
-public class Duplicate2 {
+public class Duplicate {
     public static int duplicate(int[] array) {
         if (array == null || array.length == 0) {
             return -1;

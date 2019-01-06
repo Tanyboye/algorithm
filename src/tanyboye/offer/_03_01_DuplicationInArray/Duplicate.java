@@ -1,4 +1,4 @@
-package tanyboye.offer.array.duplicate;
+package tanyboye.offer._03_01_DuplicationInArray;
 
 /**
  * @author: chengbg
@@ -8,7 +8,7 @@ package tanyboye.offer.array.duplicate;
  * 请找出数组中任意一个重复的数字。
  * 例如：输入长度为7的数组{2，3，1，0，2，5，3}，那么对应的输出是重复的数字2或者3。
  **/
-public class Duplicate1 {
+public class Duplicate {
     public static int duplicate(int[] array) {
         if (array == null || array.length == 0) {
             return -1;
