@@ -8,6 +8,21 @@ package tanyboye.offer._07_ConstructBinaryTree;
  * 例如输入前序遍历序列{ 1, 2, 4, 7, 3, 5, 6, 8 }和中序遍历序列{ 4, 7, 2, 1, 5, 3, 8, 6 }
  **/
 public class ConstructBinaryTree {
+
+    public static Node constructBinaryTree(int[] pre, int[] in) {
+        if (pre == null || in == null) {
+            return null;
+        }
+        if (pre.length == 0 || in.length == 0) {
+            return null;
+        }
+        if (pre.length != in.length) {
+            return null;
+        }
+        Node node = constructBinaryTree(pre, 0, pre.length, in, 0, in.length);
+        return node;
+    }
+
     /**
      * 递归重建二叉树
      *
@@ -42,7 +57,7 @@ public class ConstructBinaryTree {
     public static void main(String[] args) {
         int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
-        Node node = constructBinaryTree(pre, 0, pre.length, in, 0, in.length);
+        Node node = constructBinaryTree(pre, in);
         System.out.println(node.value);
     }
 }
