@@ -1,4 +1,4 @@
-package tanyboye.letcode._02_addTwoNumbers;
+package tanyboye.letcode._02_AddTwoNumbers;
 
 /**
  * @author: chengbg
@@ -16,7 +16,7 @@ package tanyboye.letcode._02_addTwoNumbers;
  * 输出：7 -> 0 -> 8
  * 原因：342 + 465 = 807
  **/
-public class addTwoNumbers {
+public class AddTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode first = new ListNode(0);
